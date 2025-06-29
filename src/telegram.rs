@@ -114,32 +114,22 @@ impl TelegramNotifier {
     
     /// Format success message when puzzle is solved
     fn format_success_message(&self, result: &CheckResult, puzzle: &Puzzle) -> String {
-        let match_type = match result.match_type {
-            Some(crate::checker::AddressType::Compressed) => "Compressed",
-            Some(crate::checker::AddressType::Uncompressed) => "Uncompressed",
-            None => "Unknown",
-        };
-        
         format!(
             "🎉🎉🎉 **BITCOIN PUZZLE SOLVED!** 🎉🎉🎉\n\n\
             **Puzzle:** #{}\n\
             **Bits:** {}\n\
-            **Reward:** {} BTC\n\
-            **Address Type:** {}\n\n\
+            **Reward:** {} BTC\n\n\
             **Target Address:**\n`{}`\n\n\
             **Private Key (HEX):**\n`{}`\n\n\
-            **Compressed Address:**\n`{}`\n\n\
-            **Uncompressed Address:**\n`{}`\n\n\
+            **Generated Address:**\n`{}`\n\n\
             🚨 **IMPORTANT:** Secure this private key immediately! 🚨\n\n\
             💰 **Estimated Value:** ${:.2} USD (at current BTC price)",
             result.puzzle_number,
             puzzle.bits,
             puzzle.reward_btc,
-            match_type,
             result.target_address,
             result.private_key_hex,
-            result.compressed_address,
-            result.uncompressed_address,
+            result.address,
             puzzle.reward_btc * 50000.0 // Rough BTC price estimate
         )
     }
@@ -212,7 +202,7 @@ impl Default for TelegramConfig {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::checker::{CheckResult, AddressType};
+    use crate::checker::CheckResult;
     use secp256k1::SecretKey;
     
     #[test]
@@ -223,16 +213,14 @@ mod tests {
         let notifier = TelegramNotifier::with_credentials(bot_token, chat_id);
         
         let private_key_bytes = hex::decode("0000000000000000000000000000000000000000000000000000000000000001").unwrap();
-        let private_key = SecretKey::from_slice(&private_key_bytes).unwrap();
+        let _private_key = SecretKey::from_slice(&private_key_bytes).unwrap();
         
         let result = CheckResult {
             puzzle_number: 14,
             private_key_hex: "0000000000000000000000000000000000000000000000000000000000000001".to_string(),
-            compressed_address: "1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH".to_string(),
-            uncompressed_address: "1EHNa6Q4Jz2uvNExL497mE43ikXhwF6kZm".to_string(),
+            address: "1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH".to_string(),
             target_address: "1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH".to_string(),
             is_match: true,
-            match_type: Some(AddressType::Compressed),
         };
         
         let puzzle = Puzzle {
@@ -249,7 +237,6 @@ mod tests {
         assert!(message.contains("BITCOIN PUZZLE SOLVED"));
         assert!(message.contains("Puzzle:** #14"));
         assert!(message.contains("Bits:** 14"));
-        assert!(message.contains("Compressed"));
         assert!(message.contains(&result.private_key_hex));
         assert!(message.contains(&result.target_address));
     }

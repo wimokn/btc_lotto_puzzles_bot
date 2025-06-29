@@ -1,5 +1,13 @@
 [
   {
+    "puzzle": 11,
+    "bits": 11,
+    "range_start": "0x400",
+    "range_end": "0x7ff",
+    "address": "1PgQVLmst3Z314JrQn5TNiys8Hc38TcXJu",
+    "reward_btc": 0.0
+  },
+  {
     "puzzle": 14,
     "bits": 14,
     "range_start": "0x2000",
