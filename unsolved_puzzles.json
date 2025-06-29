@@ -1,0 +1,666 @@
+[
+  {
+    "puzzle": 14,
+    "bits": 14,
+    "range_start": "0x2000",
+    "range_end": "0x3fff",
+    "address": "1ErZWg5cFCe4Vw5BzgfzB74VNLaXEiEkhk",
+    "reward_btc": 0.0
+  },
+  {
+    "puzzle": 24,
+    "bits": 24,
+    "range_start": "0x800000",
+    "range_end": "0xffffff",
+    "address": "1rSnXMr63jdCuegJFuidJqWxUPV7AtUf7",
+    "reward_btc": 0.0
+  },
+  {
+    "puzzle": 31,
+    "bits": 31,
+    "range_start": "0x40000000",
+    "range_end": "0x7fffffff",
+    "address": "1LhE6sCTuGae42Axu1L1ZB7L96yi9irEBE",
+    "reward_btc": 0.0
+  },
+  {
+    "puzzle": 40,
+    "bits": 40,
+    "range_start": "0x8000000000",
+    "range_end": "0xffffffffff",
+    "address": "1EeAxcprB2PpCnr34VfZdFrkUWuxyiNEFv",
+    "reward_btc": 0.0
+  },
+  {
+    "puzzle": 60,
+    "bits": 60,
+    "range_start": "0x800000000000000",
+    "range_end": "0xfffffffffffffff",
+    "address": "1Kn5h2qpgw9mWE5jKpk8PP4qvvJ1QVy8su",
+    "reward_btc": 0.0
+  },
+  {
+    "puzzle": 71,
+    "bits": 71,
+    "range_start": "0x400000000000000000",
+    "range_end": "0x7fffffffffffffffff",
+    "address": "1PWo3JeB9jrGwfHDNpdGK54CRas7fsVzXU",
+    "reward_btc": 7.1
+  },
+  {
+    "puzzle": 72,
+    "bits": 72,
+    "range_start": "0x800000000000000000",
+    "range_end": "0xffffffffffffffffff",
+    "address": "1JTK7s9YVYywfm5XUH7RNhHJH1LshCaRFR",
+    "reward_btc": 7.2
+  },
+  {
+    "puzzle": 73,
+    "bits": 73,
+    "range_start": "0x1000000000000000000",
+    "range_end": "0x1ffffffffffffffffff",
+    "address": "12VVRNPi4SJqUTsp6FmqDqY5sGosDtysn4",
+    "reward_btc": 7.3
+  },
+  {
+    "puzzle": 74,
+    "bits": 74,
+    "range_start": "0x2000000000000000000",
+    "range_end": "0x3ffffffffffffffffff",
+    "address": "1FWGcVDK3JGzCC3WtkYetULPszMaK2Jksv",
+    "reward_btc": 7.4
+  },
+  {
+    "puzzle": 76,
+    "bits": 76,
+    "range_start": "0x8000000000000000000",
+    "range_end": "0xfffffffffffffffffff",
+    "address": "1DJh2eHFYQfACPmrvpyWc8MSTYKh7w9eRF",
+    "reward_btc": 7.6
+  },
+  {
+    "puzzle": 77,
+    "bits": 77,
+    "range_start": "0x10000000000000000000",
+    "range_end": "0x1fffffffffffffffffff",
+    "address": "1Bxk4CQdqL9p22JEtDfdXMsng1XacifUtE",
+    "reward_btc": 7.7
+  },
+  {
+    "puzzle": 78,
+    "bits": 78,
+    "range_start": "0x20000000000000000000",
+    "range_end": "0x3fffffffffffffffffff",
+    "address": "15qF6X51huDjqTmF9BJgxXdt1xcj46Jmhb",
+    "reward_btc": 7.8
+  },
+  {
+    "puzzle": 79,
+    "bits": 79,
+    "range_start": "0x40000000000000000000",
+    "range_end": "0x7fffffffffffffffffff",
+    "address": "1ARk8HWJMn8js8tQmGUJeQHjSE7KRkn2t8",
+    "reward_btc": 7.9
+  },
+  {
+    "puzzle": 81,
+    "bits": 81,
+    "range_start": "0x100000000000000000000",
+    "range_end": "0x1ffffffffffffffffffff",
+    "address": "15qsCm78whspNQFydGJQk5rexzxTQopnHZ",
+    "reward_btc": 8.1
+  },
+  {
+    "puzzle": 82,
+    "bits": 82,
+    "range_start": "0x200000000000000000000",
+    "range_end": "0x3ffffffffffffffffffff",
+    "address": "13zYrYhhJxp6Ui1VV7pqa5WDhNWM45ARAC",
+    "reward_btc": 8.2
+  },
+  {
+    "puzzle": 83,
+    "bits": 83,
+    "range_start": "0x400000000000000000000",
+    "range_end": "0x7ffffffffffffffffffff",
+    "address": "14MdEb4eFcT3MVG5sPFG4jGLuHJSnt1Dk2",
+    "reward_btc": 8.3
+  },
+  {
+    "puzzle": 84,
+    "bits": 84,
+    "range_start": "0x800000000000000000000",
+    "range_end": "0xfffffffffffffffffffff",
+    "address": "1CMq3SvFcVEcpLMuuH8PUcNiqsK1oicG2D",
+    "reward_btc": 8.4
+  },
+  {
+    "puzzle": 86,
+    "bits": 86,
+    "range_start": "0x2000000000000000000000",
+    "range_end": "0x3fffffffffffffffffffff",
+    "address": "1K3x5L6G57Y494fDqBfrojD28UJv4s5JcK",
+    "reward_btc": 8.6
+  },
+  {
+    "puzzle": 87,
+    "bits": 87,
+    "range_start": "0x4000000000000000000000",
+    "range_end": "0x7fffffffffffffffffffff",
+    "address": "1PxH3K1Shdjb7gSEoTX7UPDZ6SH4qGPrvq",
+    "reward_btc": 8.7
+  },
+  {
+    "puzzle": 88,
+    "bits": 88,
+    "range_start": "0x8000000000000000000000",
+    "range_end": "0xffffffffffffffffffffff",
+    "address": "16AbnZjZZipwHMkYKBSfswGWKDmXHjEpSf",
+    "reward_btc": 8.8
+  },
+  {
+    "puzzle": 89,
+    "bits": 89,
+    "range_start": "0x10000000000000000000000",
+    "range_end": "0x1ffffffffffffffffffffff",
+    "address": "19QciEHbGVNY4hrhfKXmcBBCrJSBZ6TaVt",
+    "reward_btc": 8.9
+  },
+  {
+    "puzzle": 91,
+    "bits": 91,
+    "range_start": "0x40000000000000000000000",
+    "range_end": "0x7ffffffffffffffffffffff",
+    "address": "1EzVHtmbN4fs4MiNk3ppEnKKhsmXYJ4s74",
+    "reward_btc": 9.1
+  },
+  {
+    "puzzle": 92,
+    "bits": 92,
+    "range_start": "0x80000000000000000000000",
+    "range_end": "0xfffffffffffffffffffffff",
+    "address": "1AE8NzzgKE7Yhz7BWtAcAAxiFMbPo82NB5",
+    "reward_btc": 9.2
+  },
+  {
+    "puzzle": 93,
+    "bits": 93,
+    "range_start": "0x100000000000000000000000",
+    "range_end": "0x1fffffffffffffffffffffff",
+    "address": "17Q7tuG2JwFFU9rXVj3uZqRtioH3mx2Jad",
+    "reward_btc": 9.3
+  },
+  {
+    "puzzle": 94,
+    "bits": 94,
+    "range_start": "0x200000000000000000000000",
+    "range_end": "0x3fffffffffffffffffffffff",
+    "address": "1K6xGMUbs6ZTXBnhw1pippqwK6wjBWtNpL",
+    "reward_btc": 9.4
+  },
+  {
+    "puzzle": 96,
+    "bits": 96,
+    "range_start": "0x800000000000000000000000",
+    "range_end": "0xffffffffffffffffffffffff",
+    "address": "15ANYzzCp5BFHcCnVFzXqyibpzgPLWaD8b",
+    "reward_btc": 9.6
+  },
+  {
+    "puzzle": 97,
+    "bits": 97,
+    "range_start": "0x1000000000000000000000000",
+    "range_end": "0x1ffffffffffffffffffffffff",
+    "address": "18ywPwj39nGjqBrQJSzZVq2izR12MDpDr8",
+    "reward_btc": 9.7
+  },
+  {
+    "puzzle": 98,
+    "bits": 98,
+    "range_start": "0x2000000000000000000000000",
+    "range_end": "0x3ffffffffffffffffffffffff",
+    "address": "1CaBVPrwUxbQYYswu32w7Mj4HR4maNoJSX",
+    "reward_btc": 9.8
+  },
+  {
+    "puzzle": 99,
+    "bits": 99,
+    "range_start": "0x4000000000000000000000000",
+    "range_end": "0x7ffffffffffffffffffffffff",
+    "address": "1JWnE6p6UN7ZJBN7TtcbNDoRcjFtuDWoNL",
+    "reward_btc": 9.9
+  },
+  {
+    "puzzle": 101,
+    "bits": 101,
+    "range_start": "0x10000000000000000000000000",
+    "range_end": "0x1fffffffffffffffffffffffff",
+    "address": "1CKCVdbDJasYmhswB6HKZHEAnNaDpK7W4n",
+    "reward_btc": 10.1
+  },
+  {
+    "puzzle": 102,
+    "bits": 102,
+    "range_start": "0x20000000000000000000000000",
+    "range_end": "0x3fffffffffffffffffffffffff",
+    "address": "1PXv28YxmYMaB8zxrKeZBW8dt2HK7RkRPX",
+    "reward_btc": 10.2
+  },
+  {
+    "puzzle": 103,
+    "bits": 103,
+    "range_start": "0x40000000000000000000000000",
+    "range_end": "0x7fffffffffffffffffffffffff",
+    "address": "1AcAmB6jmtU6AiEcXkmiNE9TNVPsj9DULf",
+    "reward_btc": 10.3
+  },
+  {
+    "puzzle": 104,
+    "bits": 104,
+    "range_start": "0x80000000000000000000000000",
+    "range_end": "0xffffffffffffffffffffffffff",
+    "address": "1EQJvpsmhazYCcKX5Au6AZmZKRnzarMVZu",
+    "reward_btc": 10.4
+  },
+  {
+    "puzzle": 106,
+    "bits": 106,
+    "range_start": "0x200000000000000000000000000",
+    "range_end": "0x3ffffffffffffffffffffffffff",
+    "address": "18KsfuHuzQaBTNLASyj15hy4LuqPUo1FNB",
+    "reward_btc": 10.6
+  },
+  {
+    "puzzle": 107,
+    "bits": 107,
+    "range_start": "0x400000000000000000000000000",
+    "range_end": "0x7ffffffffffffffffffffffffff",
+    "address": "15EJFC5ZTs9nhsdvSUeBXjLAuYq3SWaxTc",
+    "reward_btc": 10.7
+  },
+  {
+    "puzzle": 108,
+    "bits": 108,
+    "range_start": "0x800000000000000000000000000",
+    "range_end": "0xfffffffffffffffffffffffffff",
+    "address": "1HB1iKUqeffnVsvQsbpC6dNi1XKbyNuqao",
+    "reward_btc": 10.8
+  },
+  {
+    "puzzle": 109,
+    "bits": 109,
+    "range_start": "0x1000000000000000000000000000",
+    "range_end": "0x1fffffffffffffffffffffffffff",
+    "address": "1GvgAXVCbA8FBjXfWiAms4ytFeJcKsoyhL",
+    "reward_btc": 10.9
+  },
+  {
+    "puzzle": 111,
+    "bits": 111,
+    "range_start": "0x4000000000000000000000000000",
+    "range_end": "0x7fffffffffffffffffffffffffff",
+    "address": "1824ZJQ7nKJ9QFTRBqn7z7dHV5EGpzUpH3",
+    "reward_btc": 11.1
+  },
+  {
+    "puzzle": 112,
+    "bits": 112,
+    "range_start": "0x8000000000000000000000000000",
+    "range_end": "0xffffffffffffffffffffffffffff",
+    "address": "18A7NA9FTsnJxWgkoFfPAFbQzuQxpRtCos",
+    "reward_btc": 11.2
+  },
+  {
+    "puzzle": 113,
+    "bits": 113,
+    "range_start": "0x10000000000000000000000000000",
+    "range_end": "0x1ffffffffffffffffffffffffffff",
+    "address": "1NeGn21dUDDeqFQ63xb2SpgUuXuBLA4WT4",
+    "reward_btc": 11.3
+  },
+  {
+    "puzzle": 114,
+    "bits": 114,
+    "range_start": "0x20000000000000000000000000000",
+    "range_end": "0x3ffffffffffffffffffffffffffff",
+    "address": "174SNxfqpdMGYy5YQcfLbSTK3MRNZEePoy",
+    "reward_btc": 11.4
+  },
+  {
+    "puzzle": 116,
+    "bits": 116,
+    "range_start": "0x80000000000000000000000000000",
+    "range_end": "0xfffffffffffffffffffffffffffff",
+    "address": "1MnJ6hdhvK37VLmqcdEwqC3iFxyWH2PHUV",
+    "reward_btc": 11.6
+  },
+  {
+    "puzzle": 117,
+    "bits": 117,
+    "range_start": "0x100000000000000000000000000000",
+    "range_end": "0x1fffffffffffffffffffffffffffff",
+    "address": "1KNRfGWw7Q9Rmwsc6NT5zsdvEb9M2Wkj5Z",
+    "reward_btc": 11.7
+  },
+  {
+    "puzzle": 118,
+    "bits": 118,
+    "range_start": "0x200000000000000000000000000000",
+    "range_end": "0x3fffffffffffffffffffffffffffff",
+    "address": "1PJZPzvGX19a7twf5HyD2VvNiPdHLzm9F6",
+    "reward_btc": 11.8
+  },
+  {
+    "puzzle": 119,
+    "bits": 119,
+    "range_start": "0x400000000000000000000000000000",
+    "range_end": "0x7fffffffffffffffffffffffffffff",
+    "address": "1GuBBhf61rnvRe4K8zu8vdQB3kHzwFqSy7",
+    "reward_btc": 11.9
+  },
+  {
+    "puzzle": 121,
+    "bits": 121,
+    "range_start": "0x1000000000000000000000000000000",
+    "range_end": "0x1ffffffffffffffffffffffffffffff",
+    "address": "1GDSuiThEV64c166LUFC9uDcVdGjqkxKyh",
+    "reward_btc": 12.1
+  },
+  {
+    "puzzle": 122,
+    "bits": 122,
+    "range_start": "0x2000000000000000000000000000000",
+    "range_end": "0x3ffffffffffffffffffffffffffffff",
+    "address": "1Me3ASYt5JCTAK2XaC32RMeH34PdprrfDx",
+    "reward_btc": 12.2
+  },
+  {
+    "puzzle": 123,
+    "bits": 123,
+    "range_start": "0x4000000000000000000000000000000",
+    "range_end": "0x7ffffffffffffffffffffffffffffff",
+    "address": "1CdufMQL892A69KXgv6UNBD17ywWqYpKut",
+    "reward_btc": 12.3
+  },
+  {
+    "puzzle": 124,
+    "bits": 124,
+    "range_start": "0x8000000000000000000000000000000",
+    "range_end": "0xfffffffffffffffffffffffffffffff",
+    "address": "1BkkGsX9ZM6iwL3zbqs7HWBV7SvosR6m8N",
+    "reward_btc": 12.4
+  },
+  {
+    "puzzle": 126,
+    "bits": 126,
+    "range_start": "0x20000000000000000000000000000000",
+    "range_end": "0x3fffffffffffffffffffffffffffffff",
+    "address": "1AWCLZAjKbV1P7AHvaPNCKiB7ZWVDMxFiz",
+    "reward_btc": 12.6
+  },
+  {
+    "puzzle": 127,
+    "bits": 127,
+    "range_start": "0x40000000000000000000000000000000",
+    "range_end": "0x7fffffffffffffffffffffffffffffff",
+    "address": "1G6EFyBRU86sThN3SSt3GrHu1sA7w7nzi4",
+    "reward_btc": 12.7
+  },
+  {
+    "puzzle": 128,
+    "bits": 128,
+    "range_start": "0x80000000000000000000000000000000",
+    "range_end": "0xffffffffffffffffffffffffffffffff",
+    "address": "1MZ2L1gFrCtkkn6DnTT2e4PFUTHw9gNwaj",
+    "reward_btc": 12.8
+  },
+  {
+    "puzzle": 129,
+    "bits": 129,
+    "range_start": "0x100000000000000000000000000000000",
+    "range_end": "0x1ffffffffffffffffffffffffffffffff",
+    "address": "1Hz3uv3nNZzBVMXLGadCucgjiCs5W9vaGz",
+    "reward_btc": 12.9
+  },
+  {
+    "puzzle": 131,
+    "bits": 131,
+    "range_start": "0x400000000000000000000000000000000",
+    "range_end": "0x7ffffffffffffffffffffffffffffffff",
+    "address": "16zRPnT8znwq42q7XeMkZUhb1bKqgRogyy",
+    "reward_btc": 13.1
+  },
+  {
+    "puzzle": 132,
+    "bits": 132,
+    "range_start": "0x800000000000000000000000000000000",
+    "range_end": "0xfffffffffffffffffffffffffffffffff",
+    "address": "1KrU4dHE5WrW8rhWDsTRjR21r8t3dsrS3R",
+    "reward_btc": 13.2
+  },
+  {
+    "puzzle": 133,
+    "bits": 133,
+    "range_start": "0x1000000000000000000000000000000000",
+    "range_end": "0x1fffffffffffffffffffffffffffffffff",
+    "address": "17uDfp5r4n441xkgLFmhNoSW1KWp6xVLD",
+    "reward_btc": 13.3
+  },
+  {
+    "puzzle": 134,
+    "bits": 134,
+    "range_start": "0x2000000000000000000000000000000000",
+    "range_end": "0x3fffffffffffffffffffffffffffffffff",
+    "address": "13A3JrvXmvg5w9XGvyyR4JEJqiLz8ZySY3",
+    "reward_btc": 13.4
+  },
+  {
+    "puzzle": 135,
+    "bits": 135,
+    "range_start": "0x4000000000000000000000000000000000",
+    "range_end": "0x7fffffffffffffffffffffffffffffffff",
+    "address": "16RGFo6hjq9ym6Pj7N5H7L1NR1rVPJyw2v",
+    "reward_btc": 13.5
+  },
+  {
+    "puzzle": 136,
+    "bits": 136,
+    "range_start": "0x8000000000000000000000000000000000",
+    "range_end": "0xffffffffffffffffffffffffffffffffff",
+    "address": "1UDHPdovvR985NrWSkdWQDEQ1xuRiTALq",
+    "reward_btc": 13.6
+  },
+  {
+    "puzzle": 137,
+    "bits": 137,
+    "range_start": "0x10000000000000000000000000000000000",
+    "range_end": "0x1ffffffffffffffffffffffffffffffffff",
+    "address": "15nf31J46iLuK1ZkTnqHo7WgN5cARFK3RA",
+    "reward_btc": 13.7
+  },
+  {
+    "puzzle": 138,
+    "bits": 138,
+    "range_start": "0x20000000000000000000000000000000000",
+    "range_end": "0x3ffffffffffffffffffffffffffffffffff",
+    "address": "1Ab4vzG6wEQBDNQM1B2bvUz4fqXXdFk2WT",
+    "reward_btc": 13.8
+  },
+  {
+    "puzzle": 139,
+    "bits": 139,
+    "range_start": "0x40000000000000000000000000000000000",
+    "range_end": "0x7ffffffffffffffffffffffffffffffffff",
+    "address": "1Fz63c775VV9fNyj25d9Xfw3YHE6sKCxbt",
+    "reward_btc": 13.9
+  },
+  {
+    "puzzle": 140,
+    "bits": 140,
+    "range_start": "0x80000000000000000000000000000000000",
+    "range_end": "0xfffffffffffffffffffffffffffffffffff",
+    "address": "1QKBaU6WAeycb3DbKbLBkX7vJiaS8r42Xo",
+    "reward_btc": 14.0
+  },
+  {
+    "puzzle": 141,
+    "bits": 141,
+    "range_start": "0x100000000000000000000000000000000000",
+    "range_end": "0x1fffffffffffffffffffffffffffffffffff",
+    "address": "1CD91Vm97mLQvXhrnoMChhJx4TP9MaQkJo",
+    "reward_btc": 14.1
+  },
+  {
+    "puzzle": 142,
+    "bits": 142,
+    "range_start": "0x200000000000000000000000000000000000",
+    "range_end": "0x3fffffffffffffffffffffffffffffffffff",
+    "address": "15MnK2jXPqTMURX4xC3h4mAZxyCcaWWEDD",
+    "reward_btc": 14.2
+  },
+  {
+    "puzzle": 143,
+    "bits": 143,
+    "range_start": "0x400000000000000000000000000000000000",
+    "range_end": "0x7fffffffffffffffffffffffffffffffffff",
+    "address": "13N66gCzWWHEZBxhVxG18P8wyjEWF9Yoi1",
+    "reward_btc": 14.3
+  },
+  {
+    "puzzle": 144,
+    "bits": 144,
+    "range_start": "0x800000000000000000000000000000000000",
+    "range_end": "0xffffffffffffffffffffffffffffffffffff",
+    "address": "1NevxKDYuDcCh1ZMMi6ftmWwGrZKC6j7Ux",
+    "reward_btc": 14.4
+  },
+  {
+    "puzzle": 145,
+    "bits": 145,
+    "range_start": "0x1000000000000000000000000000000000000",
+    "range_end": "0x1ffffffffffffffffffffffffffffffffffff",
+    "address": "19GpszRNUej5yYqxXoLnbZWKew3KdVLkXg",
+    "reward_btc": 14.5
+  },
+  {
+    "puzzle": 146,
+    "bits": 146,
+    "range_start": "0x2000000000000000000000000000000000000",
+    "range_end": "0x3ffffffffffffffffffffffffffffffffffff",
+    "address": "1M7ipcdYHey2Y5RZM34MBbpugghmjaV89P",
+    "reward_btc": 14.6
+  },
+  {
+    "puzzle": 147,
+    "bits": 147,
+    "range_start": "0x4000000000000000000000000000000000000",
+    "range_end": "0x7ffffffffffffffffffffffffffffffffffff",
+    "address": "18aNhurEAJsw6BAgtANpexk5ob1aGTwSeL",
+    "reward_btc": 14.7
+  },
+  {
+    "puzzle": 148,
+    "bits": 148,
+    "range_start": "0x8000000000000000000000000000000000000",
+    "range_end": "0xfffffffffffffffffffffffffffffffffffff",
+    "address": "1FwZXt6EpRT7Fkndzv6K4b4DFoT4trbMrV",
+    "reward_btc": 14.8
+  },
+  {
+    "puzzle": 149,
+    "bits": 149,
+    "range_start": "0x10000000000000000000000000000000000000",
+    "range_end": "0x1fffffffffffffffffffffffffffffffffffff",
+    "address": "1CXvTzR6qv8wJ7eprzUKeWxyGcHwDYP1i2",
+    "reward_btc": 14.9
+  },
+  {
+    "puzzle": 150,
+    "bits": 150,
+    "range_start": "0x20000000000000000000000000000000000000",
+    "range_end": "0x3fffffffffffffffffffffffffffffffffffff",
+    "address": "1MUJSJYtGPVGkBCTqGspnxyHahpt5Te8jy",
+    "reward_btc": 15.0
+  },
+  {
+    "puzzle": 151,
+    "bits": 151,
+    "range_start": "0x40000000000000000000000000000000000000",
+    "range_end": "0x7fffffffffffffffffffffffffffffffffffff",
+    "address": "13Q84TNNvgcL3HJiqQPvyBb9m4hxjS3jkV",
+    "reward_btc": 15.1
+  },
+  {
+    "puzzle": 152,
+    "bits": 152,
+    "range_start": "0x80000000000000000000000000000000000000",
+    "range_end": "0xffffffffffffffffffffffffffffffffffffff",
+    "address": "1LuUHyrQr8PKSvbcY1v1PiuGuqFjWpDumN",
+    "reward_btc": 15.2
+  },
+  {
+    "puzzle": 153,
+    "bits": 153,
+    "range_start": "0x100000000000000000000000000000000000000",
+    "range_end": "0x1ffffffffffffffffffffffffffffffffffffff",
+    "address": "18192XpzzdDi2K11QVHR7td2HcPS6Qs5vg",
+    "reward_btc": 15.3
+  },
+  {
+    "puzzle": 154,
+    "bits": 154,
+    "range_start": "0x200000000000000000000000000000000000000",
+    "range_end": "0x3ffffffffffffffffffffffffffffffffffffff",
+    "address": "1NgVmsCCJaKLzGyKLFJfVequnFW9ZvnMLN",
+    "reward_btc": 15.4
+  },
+  {
+    "puzzle": 155,
+    "bits": 155,
+    "range_start": "0x400000000000000000000000000000000000000",
+    "range_end": "0x7ffffffffffffffffffffffffffffffffffffff",
+    "address": "1AoeP37TmHdFh8uN72fu9AqgtLrUwcv2wJ",
+    "reward_btc": 15.5
+  },
+  {
+    "puzzle": 156,
+    "bits": 156,
+    "range_start": "0x800000000000000000000000000000000000000",
+    "range_end": "0xfffffffffffffffffffffffffffffffffffffff",
+    "address": "1FTpAbQa4h8trvhQXjXnmNhqdiGBd1oraE",
+    "reward_btc": 15.6
+  },
+  {
+    "puzzle": 157,
+    "bits": 157,
+    "range_start": "0x1000000000000000000000000000000000000000",
+    "range_end": "0x1fffffffffffffffffffffffffffffffffffffff",
+    "address": "14JHoRAdmJg3XR4RjMDh6Wed6ft6hzbQe9",
+    "reward_btc": 15.7
+  },
+  {
+    "puzzle": 158,
+    "bits": 158,
+    "range_start": "0x2000000000000000000000000000000000000000",
+    "range_end": "0x3fffffffffffffffffffffffffffffffffffffff",
+    "address": "19z6waranEf8CcP8FqNgdwUe1QRxvUNKBG",
+    "reward_btc": 15.8
+  },
+  {
+    "puzzle": 159,
+    "bits": 159,
+    "range_start": "0x4000000000000000000000000000000000000000",
+    "range_end": "0x7fffffffffffffffffffffffffffffffffffffff",
+    "address": "14u4nA5sugaswb6SZgn5av2vuChdMnD9E5",
+    "reward_btc": 15.9
+  },
+  {
+    "puzzle": 160,
+    "bits": 160,
+    "range_start": "0x8000000000000000000000000000000000000000",
+    "range_end": "0xffffffffffffffffffffffffffffffffffffffff",
+    "address": "1NBC8uXJy1GiJ6drkiZa1WuKn51ps7EPTv",
+    "reward_btc": 16.0
+  }
+]
