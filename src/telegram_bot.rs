@@ -385,11 +385,6 @@ impl InteractiveTelegramBot {
             .max_bits
             .map(|b| b.to_string())
             .unwrap_or_else(|| "None".to_string());
-        let min_reward = state_guard
-            .config
-            .min_reward_btc
-            .map(|r| format!("{:.1}", r))
-            .unwrap_or_else(|| "None".to_string());
 
         format!(
             "⚙️ *Bot Configuration*\n\n\
@@ -400,8 +395,7 @@ impl InteractiveTelegramBot {
             • Stats Update Interval: `{:.1}` hours\n\n\
             *Puzzle Filters:*\n\
             • Minimum Bits: `{}`\n\
-            • Maximum Bits: `{}`\n\
-            • Minimum Reward: `{}` BTC\n\n\
+            • Maximum Bits: `{}`\n\n\
             *Features:*\n\
             • Stats Updates: `{}`\n\
             • Total Puzzles Available: `{}`\n\n\
@@ -412,7 +406,6 @@ impl InteractiveTelegramBot {
             state_guard.config.stats_update_interval_hours,
             min_bits,
             max_bits,
-            min_reward,
             if state_guard.config.send_stats_updates {
                 "Enabled"
             } else {

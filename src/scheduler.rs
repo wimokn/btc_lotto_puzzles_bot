@@ -29,8 +29,6 @@ pub struct SchedulerConfig {
     pub min_bits: Option<u32>,
     /// Maximum bits to consider (puzzles above this are ignored)
     pub max_bits: Option<u32>,
-    /// Minimum reward in BTC to consider
-    pub min_reward_btc: Option<f64>,
     /// Whether to send periodic status updates
     pub send_stats_updates: bool,
     /// How often to send stats updates (in hours)
@@ -45,7 +43,6 @@ impl Default for SchedulerConfig {
             threads: 8,                 // 8 threads for parallel processing
             min_bits: Some(14),         // Skip very small puzzles
             max_bits: None,             // No upper limit
-            min_reward_btc: Some(0.0),  // Include all puzzles with rewards
             send_stats_updates: true,
             stats_update_interval_hours: 24.0, // Daily stats
         }
@@ -60,6 +57,7 @@ pub struct PuzzleSolverScheduler {
     check_stats: CheckStats,
     start_time: Instant,
     bot_state: Option<Arc<RwLock<BotState>>>,
+    has_sent_first_stats: bool,
 }
 
 impl PuzzleSolverScheduler {
@@ -76,6 +74,7 @@ impl PuzzleSolverScheduler {
             check_stats: CheckStats::new(),
             start_time: Instant::now(),
             bot_state: None,
+            has_sent_first_stats: false,
         }
     }
 
@@ -93,6 +92,7 @@ impl PuzzleSolverScheduler {
             check_stats: CheckStats::new(),
             start_time: Instant::now(),
             bot_state: Some(bot_state),
+            has_sent_first_stats: false,
         }
     }
 
@@ -203,7 +203,7 @@ impl PuzzleSolverScheduler {
                 let mut thread_stats = 0u64;
                 let thread_start = Instant::now();
 
-                log::info!("Worker thread {} started", thread_id);
+                log::debug!("Worker thread {} started", thread_id);
 
                 loop {
                     // Check if we should stop (time limit or shutdown signal)
@@ -396,20 +396,20 @@ impl PuzzleSolverScheduler {
                     }
                 }
 
-                // Check minimum reward
-                if let Some(min_reward) = self.config.min_reward_btc {
-                    if puzzle.reward_btc < min_reward {
-                        return false;
-                    }
-                }
-
                 true
             })
             .collect()
     }
 
     /// Send periodic statistics update
-    async fn send_stats_update(&self) -> Result<()> {
+    async fn send_stats_update(&mut self) -> Result<()> {
+        // Skip first stats update if no keys have been checked yet
+        if !self.has_sent_first_stats && self.check_stats.total_checked == 0 {
+            log::debug!("Skipping first stats update - no activity yet");
+            self.has_sent_first_stats = true;
+            return Ok(());
+        }
+
         if let Some(notifier) = &self.telegram_notifier {
             let uptime_hours = self.start_time.elapsed().as_secs_f64() / 3600.0;
 
@@ -422,6 +422,7 @@ impl PuzzleSolverScheduler {
                 .await?;
         }
 
+        self.has_sent_first_stats = true;
         Ok(())
     }
 
@@ -498,7 +499,6 @@ mod tests {
         let config = SchedulerConfig {
             min_bits: Some(14),
             max_bits: Some(50),
-            min_reward_btc: Some(1.0),
             ..Default::default()
         };
 
@@ -516,7 +516,6 @@ mod tests {
         assert_eq!(config.check_interval_seconds, 60);
         assert_eq!(config.threads, 8);
         assert_eq!(config.min_bits, Some(14));
-        assert_eq!(config.min_reward_btc, Some(0.0));
         assert!(config.send_stats_updates);
     }
 }

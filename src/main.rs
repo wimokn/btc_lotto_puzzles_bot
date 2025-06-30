@@ -189,9 +189,6 @@ fn load_config_from_env() -> SchedulerConfig {
         .ok()
         .and_then(|s| s.parse().ok());
     
-    let min_reward_btc = env::var("MIN_REWARD_BTC")
-        .ok()
-        .and_then(|s| s.parse().ok());
     
     let send_stats_updates = env::var("SEND_STATS_UPDATES")
         .ok()
@@ -209,7 +206,6 @@ fn load_config_from_env() -> SchedulerConfig {
         threads,
         min_bits,
         max_bits,
-        min_reward_btc,
         send_stats_updates,
         stats_update_interval_hours,
     }
@@ -251,7 +247,6 @@ mod tests {
             env::set_var("THREADS", "4");
             env::set_var("MIN_BITS", "20");
             env::set_var("MAX_BITS", "80");
-            env::set_var("MIN_REWARD_BTC", "1.0");
         }
         
         let config = load_config_from_env();
@@ -261,7 +256,6 @@ mod tests {
         assert_eq!(config.threads, 4);
         assert_eq!(config.min_bits, Some(20));
         assert_eq!(config.max_bits, Some(80));
-        assert_eq!(config.min_reward_btc, Some(1.0));
         
         // Clean up
         unsafe {
@@ -270,7 +264,6 @@ mod tests {
             env::remove_var("THREADS");
             env::remove_var("MIN_BITS");
             env::remove_var("MAX_BITS");
-            env::remove_var("MIN_REWARD_BTC");
         }
     }
     
